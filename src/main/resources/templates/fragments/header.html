@@ -1,0 +1,32 @@
+<header th:fragment="header" class="header slider-fade" id="header">
+    <div class="owl-carousel owl-theme">
+        <div th:each="photo, iter : ${website.listWebsitePhoto}" class="text-center item bg-img" data-overlay-dark="2"
+            th:attr="data-background='/loadfile/'+${photo.namaPhoto}">
+            <div class="v-middle caption">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1">
+                            <span>
+                                <i class="star-rating"></i>
+                                <i class="star-rating"></i>
+                                <i class="star-rating"></i>
+                                <i class="star-rating"></i>
+                                <i class="star-rating"></i>
+                            </span>
+                            <h2 th:text="${website.websiteName}"></h2>
+                            <th:block th:if="${iter.index == 0}">
+                                <h4>Kenyamanan Anda yang Utama</h4>
+                            </th:block>
+                            <th:block th:if="${iter.index == 1}">
+                                <h4>Bangunan Berkualitas</h4>
+                            </th:block>
+                            <th:block th:if="${iter.index == 2}">
+                                <h4>Harga Pasti Murah</h4>
+                            </th:block>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
