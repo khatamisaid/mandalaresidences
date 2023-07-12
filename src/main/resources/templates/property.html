@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Onasis Town House Rumah impian , onasistownhouse, onasis townhouse, onasis town house, property murah, harga terjangkau, tidak ada bunga, lokasi pusat kota, harga paling murah "/>
+    <meta name="description"
+        content="Onasis Town House Rumah impian , onasistownhouse, onasis townhouse, onasis town house, property murah, harga terjangkau, tidak ada bunga, lokasi pusat kota, harga paling murah " />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="google-site-verification" content="w_5ajaJMvXEGYDQXCbEqTVy3bAtSle5IIePlYo6H8EE" />
-    <title>Onasis Town House</title>
+    <title>Mandala Residences</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,22 +16,23 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Gilda+Display&display=swap">
     <link rel="stylesheet" th:href="@{/css/plugins.css}" />
-    <link rel="stylesheet" th:href="@{/css/style1.css}" />
+    <link rel="stylesheet" th:href="@{/css/style4.css}" />
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N6EELX689J"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N6EELX689J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-N6EELX689J');
-</script>
-<script type="text/javascript"> //<![CDATA[ 
-    var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" : "http://www.trustlogo.com/");
-    document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));
+        gtag('config', 'G-N6EELX689J');
+    </script>
+    <script type="text/javascript"> //<![CDATA[ 
+        var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" : "http://www.trustlogo.com/");
+        document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));
     //]]>
-</script>
+    </script>
 </head>
+
 <body>
     <!-- Preloader -->
     <div class="preloader-bg"></div>
@@ -47,42 +49,43 @@
     </div>
     <!-- <div th:replace="fragments/hubungikami :: hubungikami"></div> -->
     <!-- Navbar -->
+    <a href="#" class="js-cappa-nav-toggle cappa-nav-toggle"><i></i></a>
     <div th:replace="fragments/navbar :: navbar"></div>
     <!-- Slider -->
     <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
-    <header class="header slider-fade" id="header">
-        <div class="owl-carousel owl-theme">
-            <div th:each="photo, iter : ${website.listWebsitePhoto}" class="text-center item bg-img" data-overlay-dark="2"
-                th:attr="data-background='/loadfile/'+${photo.namaPhoto}">
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                <span>
-                                    <i class="star-rating"></i>
-                                    <i class="star-rating"></i>
-                                    <i class="star-rating"></i>
-                                    <i class="star-rating"></i>
-                                    <i class="star-rating"></i>
-                                </span>
-                                <h2 th:text="${website.websiteName}"></h2>
-                                <th:block th:if="${iter.index == 0}">
-                                    <h4>Kenyamanan Anda yang Utama</h4>
-                                </th:block>
-                                <th:block th:if="${iter.index == 1}">
-                                    <h4>Bangunan Berkualitas</h4>
-                                </th:block>
-                                <th:block th:if="${iter.index == 2}">
-                                    <h4>Harga Pasti Murah</h4>
-                                </th:block>
+    <div id="cappa-main">
+        <header class="header slider-fade" id="header">
+            <div class="owl-carousel owl-theme">
+                <div th:each="photo, iter : ${website.listWebsitePhoto}" class="text-center item bg-img"
+                    data-overlay-dark="2" th:attr="data-background='/loadfile/'+${photo.namaPhoto}">
+                    <div class="v-middle caption">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 offset-md-1">
+                                    <span>
+                                        <i class="star-rating"></i>
+                                        <i class="star-rating"></i>
+                                        <i class="star-rating"></i>
+                                        <i class="star-rating"></i>
+                                        <i class="star-rating"></i>
+                                    </span>
+                                    <h2 th:text="${website.websiteName}"></h2>
+                                    <th:block th:if="${iter.index == 0}">
+                                        <h4>Kenyamanan Anda yang Utama</h4>
+                                    </th:block>
+                                    <th:block th:if="${iter.index == 1}">
+                                        <h4>Bangunan Berkualitas</h4>
+                                    </th:block>
+                                    <th:block th:if="${iter.index == 2}">
+                                        <h4>Harga Pasti Murah</h4>
+                                    </th:block>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div style="z-index: 20; position: absolute; margin-top: -2.25rem;" class="card container">
+            <div style="z-index: 20; position: absolute; margin-top: -2.25rem; margin-left: 32px;" class="card container">
                 <div class="card-body">
                     <div class="d-flex flex-row">
                         <select class="custom-select mr-2" name="area" id="area">
@@ -99,18 +102,20 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- Rekomendasi -->
-    <section style="padding: 52px 0px 24px 0px;" class="news bg-cream" data-scroll-index="1" id="rekomendasi">
-        <div th:replace="listRekomendasi :: listRekomendasi"></div>
-    </section>
-    <!-- Daftar Hunian -->
-    <section style="padding-bottom: 24px;" class="news bg-cream" data-scroll-index="2" id="daftarHunian">
-        <div th:replace="listProperty :: listProperty"></div>
-    </section>
-    <div id="tentangKami" th:replace="fragments/footerTop :: footerTop"></div>
-    <div th:replace="fragments/footerBottom :: footerBottom"></div>
+        </header>
+        <!-- Rekomendasi -->
+        <section style="padding: 52px 0px 24px 0px;" class="news bg-cream" data-scroll-index="1" id="rekomendasi">
+            <div th:replace="listRekomendasi :: listRekomendasi"></div>
+        </section>
+        <!-- Daftar Hunian -->
+        <section style="padding-bottom: 24px;" class="news bg-cream" data-scroll-index="2" id="daftarHunian">
+            <div th:replace="listProperty :: listProperty"></div>
+        </section>
+        <footer class="footer">
+            <div id="tentangKami" th:replace="fragments/footerTop :: footerTop"></div>
+            <div th:replace="fragments/footerBottom :: footerBottom"></div>
+        </footer>
+    </div>
     <!-- jQuery -->
 
     <script th:src="@{/js/jquery-3.6.0.min.js}"></script>
@@ -130,7 +135,7 @@
     <script th:src="@{/js/select2.js}"></script>
     <script th:src="@{/js/datepicker.js}"></script>
     <script th:src="@{/js/smooth-scroll.min.js}"></script>
-    <script th:src="@{/js/custom1.js}"></script>
+    <script th:src="@{/js/custom4.js}"></script>
     <script th:inline="javascript">
         /*<![CDATA[*/
         var website = /*[[${website}]]*/null;
@@ -140,7 +145,7 @@
                 newWindow.location.href = `${data.res}`;
             });
         }
-        function cari(){
+        function cari() {
             getRekomendasiProperty();
             getListProperty();
         }
@@ -148,8 +153,8 @@
     </script>
     <script language="JavaScript" type="text/javascript">
         TrustLogo("https://onasistownhouse.com/images/positivessl_trust_seal_lg_222x54.png", "CL1", "none");
-        </script>
-        <a  href="https://www.positivessl.com/" id="comodoTL">Positive SSL</a>
+    </script>
+    <a href="https://www.positivessl.com/" id="comodoTL">Positive SSL</a>
 </body>
 
 </html>

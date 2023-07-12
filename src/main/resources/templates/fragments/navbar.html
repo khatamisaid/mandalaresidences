@@ -17,12 +17,20 @@
     <!-- Menu -->
     <nav class="cappa-main-menu">
         <ul>
-            <li><a th:href='@{/}'>Beranda</a></li>
-            <li><a th:href='@{/property}'>Property</a></li>
+            <li th:classappend="${#httpServletRequest.getRequestURI() == '/' ? 'active':''}"><a th:href='@{/}'>Beranda</a></li>
+            <li th:classappend="${#httpServletRequest.getRequestURI() == '/property' ? 'active':''}"><a th:href='@{/property}'>Property</a></li>
             <li><a href="#footerTop">Tentang Kami</a></li>
             <li style="cursor: pointer;" th:if="${session.role == 'Super User' || session.role == 'Admin' || session.role == 'Marketing'}"><a
                     onclick="window.location.href = '/admin'">Halaman Admin</a>
             </li>
         </ul>
     </nav>
+    <div class="cappa-footer">
+        <div class="footer-column footer-contact">
+            <div class="footer-contact-info">
+                <div th:replace="fragments/hubungikami :: hubungikami"></div>
+                <img class="mt-4" th:src="@{/images/positivessl_trust_seal_lg_222x54.png}" alt="" srcset="">
+            </div>
+        </div>
+    </div>
 </aside>
