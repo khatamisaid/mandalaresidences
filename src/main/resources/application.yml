@@ -38,7 +38,7 @@ server:
     key-store: C:\\ssl\\mandalaresidences\\keystore.p12
     key-store-password: ImNumber4
     keyStoreType: PKCS12
-    keyAlias: onasistownhouse
+    keyAlias: mandalaresidences
   tomcat:
     remote-ip-header: x-forwarded-for
     protocol-header: x-forwarded-proto
